@@ -2,7 +2,7 @@
 module.exports = {
   mount: {
     public: {url: '/', static: true},
-    src: {url: '/dist'},
+    src: {url: '/src'},
   },
   plugins: [
     '@snowpack/plugin-svelte',
@@ -10,7 +10,7 @@ module.exports = {
   ],
   routes: [
     /* Example: Enable an SPA Fallback in development: */
-    // {"match": "routes", "src": ".*", "dest": "/index.html"},
+   // {"match": "routes", "src": ".*", "dest": "/index.html"},
   ],
   optimize: {
     /* Example: Bundle your final build: */
@@ -23,6 +23,7 @@ module.exports = {
     /* ... */
   },
   buildOptions: {
+    sourcemap:true
     /* ... */
   },
 };
